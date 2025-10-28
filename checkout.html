@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart - Rainy Days </title>
-  <meta name="description" content="Add your favorite jackets to the cart at Rainy Days">
+  <title>Checkout - Rainy Days</title>
+  <meta name="description" content="Complete your purchase safe and easy at Rainy Days">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,37 +38,52 @@
  </header>
     <!-- hær kommer side innholdet-->
 <main id="main" class="site-main">
+  <h1 class="container">Checkout</h1>
+  <section class="container Checkout">
+    <form class="card checkout__form" novalidate>
+      <h2>Payment details</h2>
 
- 
-  <section class="container cart">
-    <div class="card">
+      <div class="form-group"></div>
+        <label for="name">Full name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
 
-    <div class="cart-item">
-      <img src="images/RainyDays_Jacket2.jpg" alt ="midnight Shield Jacket">
-      <p class="cart-item__name">Midnight Shield Jacket</p>
-      <p class="cart-item__price">$100</p>
-    </div>
+      <div class="form-group"></div>
+        <label for="adress">Adress *</label>
+        <input type="text" id="adress" name="adress" required>
+      </div>
 
-        <div class="cart-item">
-      <img src="images/RainyDays_Jacket2.jpg" alt ="midnight Shield Jacket">
-      <p class="cart-item__name">Midnight Shield Jacket</p>
-      <p class="cart-item__price">$100</p>
-    </div>
+      <div class="form-group"></div>
+        <label for="zip">ZIP code *</label>
+        <input type="text" id="zip" name="zip" required pattern="[0-9]{4}" placeholder="1234">
+      </div>
+      
+      <div class="form-group"></div>
+        <label for="city">City *</label>
+        <input type="text" id="city" name="city" required>
+      </div>
 
-        <div class="cart-item">
-      <img src="images/RainyDays_Jacket2.jpg" alt ="midnight Shield Jacket">
-      <p class="cart-item__name">Midnight Shield Jacket</p>
-      <p class="cart-item__price">$100</p>
-    </div>
+      <div class="form-group"></div>
+        <label for="phone">Phone *</label>
+        <input type="text" id="phone" name="phone" required placeholder="+(oo) 12345678">
+      </div>
+
+      <div class="form group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com">
+      </div>
+
+      <button class="btn">Pay</button>
+    </form>
 
     <aside class="card">
-      <h2>Order summary</h2>
-      <p>Total <strong>$300</strong></p>
-      <a class="btn" href="checkout.html">Checkout</a>
+      <h2>Your order</h2>
+      <p>Midnight Shild Jacket x 3 - $300,-</p>
+      <p>Shipping = Free.</p>
+      <hr>
+      <p><strong>Total $300,-</strong></p>
     </aside>
-   </div>
   </section>
-
 </main>
 <!-- footer inn hær-->
   <footer class="site-footer">

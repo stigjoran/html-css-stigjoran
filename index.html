@@ -3,9 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Rainy Days - Home</title>
+  <meta name="description" content="Stay warm with jackets from Rainy Days"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+<!-- header hær-->
+ <header class="site-header">
+  <div class="container header__inner">
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="menu-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+    </label>
+    
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="shop.html">Shop</a>
+    </nav>
+
+      <a class="brand" href="index.html" aria-label="Rainy Days">
+        <img src="images/RainyDays_Logo.png" alt="Rainy Days Logo" width="120" height="40">
+      </a>
+
+      <a class="cart-link" href="cart.html" aria-label="View your cart">
+        <img src="images/9041728_cart_icon.png" alt="cart icon">
+      </a>
+    </div>
+ </header>
+
+<main id="main" class="site-main">
   
+  <section class="hero">
+  <div class="hero__media">
+    <img src="images/hero.jpg" alt="Man in rain jacket standing in the rain">
+  </div>
+  <div class="hero__content">
+    <h1>
+      <span class="nb">STAY WARM</span><br>
+      <span class="nb">THIS WINTER</span>
+    </h1>
+
+    <p>Step into the season with our latest rainwear</p>
+    <a class="btn" href="shop.html">Shop</a>
+  </div>
+ </section>
+<section class="featured container">
+      <div class="cards">
+
+        <article class="card product">
+          <img src="images/RainyDays_Jacket2.jpg" alt="Midnight Shield Jacket">
+          <div class="product__meta">
+            <strong>$100</strong>
+            <p>Midnight Shield Jacket</p>
+          </div>
+        </article>
+
+        <article class="card product">
+          <img src="images/RainyDays_Jacket1.jpg" alt="First Watch Defender Jacket">
+          <div class="product__meta">
+            <strong>$180</strong>
+            <p>First Watch Defender</p>
+          </div>
+        </article>
+
+                <article class="card product">
+          <img src="images/RainyDays_Jacket3.jpg" alt="Redline Runner Jacket">
+          <div class="product__meta">
+            <strong>$100</strong>
+            <p>Redline Runner Jacket</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="center">
+        <a class="btn btn--ghost" href="shop.html">View all</a>
+      </div>
+    </section>
+    
+    <section class="signup container">
+  <h2 class="visually-hidden">Newsletter</h2>
+  <p class="lead center">Get early access to sales, new products, and insider tips.</p>
+  <form class="signup__form" action="#" method="post">
+    <label class="visually-hidden" for="email">Your email</label>
+    <input id="email" name="email" type="email" placeholder="Your email" required>
+    <button class="btn btn--small" type="submit">Get updates</button>
+  </form>
+ </section>
+</main>
+
+<!-- footer inn hær-->
+ <footer class="site-footer">
+<div class="container footer__inner">
+  <div class="footer__brand">
+  <img src="images/RainyDays_Logo.png" alt="Rainy Days Logo">
+</div>
+
+<nav class="footer__cols" aria-label="Footer navigation">
+  <div>
+    <h3>Product</h3>
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="shop.html">Shop</a>
+  </div>
+
+  <div>
+    <h3>Company</h3>
+    <a href="#">About us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div>
+    <h3>Legal</h3>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <address>
+    Rainy Days Inc.<br> 123 Main Street,USA<br>
+    <a href="tel:12345678">12345678</a><br>
+    <a href="mailto:support@rainydays.com">support@rainydays.com</a><br>
+    </address>
+    </nav>
+    
+    <small>© 2025 rainydays. All rights reserved</small>
+    </div>
+ </footer>
+
 </body>
 </html>

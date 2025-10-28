@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart - Rainy Days </title>
-  <meta name="description" content="Add your favorite jackets to the cart at Rainy Days">
-
+  <title>Rain Jacket - Rainy Days</title>
+  <meta name="description" content="Durable and warm jackets for Rainy Days">
+  <h1>Rain Jacket</h1> <!--kan endre dette til hvert enkelt produkt navn om jeg skal ha alle jakkene med som enkelt sider-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 <!-- header hær-->
-  <header class="site-header">
+<header class="site-header">
   <div class="container header__inner">
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
@@ -38,40 +38,32 @@
  </header>
     <!-- hær kommer side innholdet-->
 <main id="main" class="site-main">
+  <h1 class="visually-hidden">Product</h1>
+  <article class="container product page">
+    <section class="card product-page__media">
+      <img src="images/RainyDays_Jacket2.jpg" alt="Scott Midnight Shield Jacket">
+    </section>
 
- 
-  <section class="container cart">
-    <div class="card">
-
-    <div class="cart-item">
-      <img src="images/RainyDays_Jacket2.jpg" alt ="midnight Shield Jacket">
-      <p class="cart-item__name">Midnight Shield Jacket</p>
-      <p class="cart-item__price">$100</p>
-    </div>
-
-        <div class="cart-item">
-      <img src="images/RainyDays_Jacket2.jpg" alt ="midnight Shield Jacket">
-      <p class="cart-item__name">Midnight Shield Jacket</p>
-      <p class="cart-item__price">$100</p>
-    </div>
-
-        <div class="cart-item">
-      <img src="images/RainyDays_Jacket2.jpg" alt ="midnight Shield Jacket">
-      <p class="cart-item__name">Midnight Shield Jacket</p>
-      <p class="cart-item__price">$100</p>
-    </div>
-
-    <aside class="card">
-      <h2>Order summary</h2>
-      <p>Total <strong>$300</strong></p>
-      <a class="btn" href="checkout.html">Checkout</a>
+    <section class="card product-page__info">
+      <h2>Scott Midnight Shield Jacket</h2>
+      <p class="muted">Lightweight Rain Jacket</p>
+      <p>Designed for cyclists who dont't let the weather stop them.</p>
+    </section>
+    
+    <aside class="card product-page__buy" aria-label="Purchase options">
+      <p class="price">$100</p>
+      <button class="btn">Add to cart</button>
+      <ul class="muted small">
+        <li>Free Shipping from $24</li>
+        <li>Ships within two business days</li>
+      </ul>
     </aside>
-   </div>
-  </section>
+  </article>
 
 </main>
+
 <!-- footer inn hær-->
-  <footer class="site-footer">
+ <footer class="site-footer">
 <div class="container footer__inner">
   <div class="footer__brand">
   <img src="images/RainyDays_Logo.png" alt="Rainy Days Logo">
