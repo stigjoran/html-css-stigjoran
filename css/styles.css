@@ -215,6 +215,10 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
         .hero p{
             color: #e6f0f2; margin-bottom: 1rem}
 
+        .featured {
+            margin-top: var(--space-6);
+        }
+
             @media (min-width: 900px) {
                 .hero {min-height: clamp(520px, 75vh, 820px);}
 
