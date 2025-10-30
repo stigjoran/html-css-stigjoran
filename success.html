@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Order Success - Rainy Days</title>
   <meta name="description" content="Order conformation">
-  <h1>Thank you for shopping with Rainy Days! We've recived your order and will send you a confirmation email shortly. </h1>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -38,13 +37,47 @@
  </header>
     <!-- hær kommer side innholdet-->
 <main id="main" class="site-main">
-<section class="container success">
-  <h1 class="center">Thanks for shopping with Rainy Days!</h1>
-  <div class="success__grid">
-    <article class="card"><h2>Order number</h2><p>Order #12345</p><p>Date: **** 10, 2025</p></article>
-    <article class="card"><h2>Need help?</h2><p>support@rainydays.com</p></article>
-    <article class="card"><h2>Order summary</h2><p>Midnight Shield Jacket x 3 = $300,-</p></article>
-  </div>
+<section class="container">
+ <div class="success-hero">
+  <h2>Thanks for shopping with Rainy Days!</h2>
+    <p>Thank you for shopping with Rainy Days! We've recived your order and will send you a confirmation email shortly.</p>
+ </div>
+
+ <div class="confirm card--dark">
+  <div class="confirm-grid">
+
+    <article class="confirm-card">
+      <h3>Order number</h3>
+      <p class="small muted">Order #12345</p>
+
+      <h3 style="margin-top:.75rem">Date:</h3>
+      <p class="small muted">October 29, 2025</p>
+
+      <p class="small helper">
+        Your items will be shipped within 2–4 business days. We’ll notify you when they’re on the way.
+      </p>
+    </article>
+
+    <article class="confirm-card">
+      <h3>Need help?</h3>
+      <p class="small muted">Contact out support team</p>
+
+      <h3 style="margin-top:.75rem;">Customer Email:</h3>
+      <p class="small"><a href="mailto:support@rainydays.com>">support@rainydays.com</a></p>
+    </article>
+
+    <article class="confirm-card confirm-summary">
+      <h3>Order summary</h3>
+
+      <div class="summary row">
+        <div>
+          <div class="small muted">Price</div>
+          <div>Rain Jacket x 1</div>
+        </div>
+        <div>$100</div>
+      </div>
+    </article>
+
 </section>
 </main>
 <!-- footer inn hær-->
