@@ -303,6 +303,18 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
             text-align: center; 
             transition: transform 0.2s ease;}
 
+        .product-card {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .card {
+            align-items: start;
+        }
+
 
         .product:hover { 
             transform: translateY(-4px);
