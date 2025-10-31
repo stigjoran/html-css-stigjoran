@@ -17,12 +17,18 @@
   <div class="container header__inner">
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-    <label for="nav-toggle" class="menu-toggle" aria-label="Open menu">
+
+    <label for="nav-toggle"
+           class="menu-toggle"
+           role="button"
+           tabindex="0"
+           aria-label="Open menu"
+           aria-controls="primary-nav">
     <span></span><span></span><span></span>
     </label>
     
-    <nav class="nav" aria-label="Primary">
-      <a class="nav__link" href="index.html">Home</a>
+    <nav id="primary-nav" class="nav" aria-label="Primary">
+      <a class="nav__link" href="index.html" aria-current="page">Home</a>
       <a class="nav__link" href="shop.html">Shop</a>
     </nav>
 
@@ -31,7 +37,7 @@
       </a>
 
       <a class="cart-link" href="cart.html" aria-label="View your cart">
-        <img src="images/9041728_cart_icon.png" alt="cart icon">
+        <img src="images/9041728_cart_icon.png" alt="">
       </a>
     </div>
  </header>
@@ -96,7 +102,7 @@
   <p class="lead center">Get early access to sales, new products, and insider tips.</p>
   <form class="signup__form" action="#" method="post">
     <label class="visually-hidden" for="email">Your email</label>
-    <input id="email" name="email" type="email" placeholder="Your email" required>
+    <input id="email" name="email" type="email" placeholder="Your email" required autocomplete="email">
     <button class="btn btn--small" type="submit">Get updates</button>
   </form>
  </section>
@@ -127,18 +133,16 @@
     <h3>Legal</h3>
     <a href="privacy.html">Privacy Policy</a>
   </div>
-  </nav>
 
   <address>
     Rainy Days Inc.<br> 123 Main Street,USA<br>
     <a href="tel:12345678">12345678</a><br>
     <a href="mailto:support@rainydays.com">support@rainydays.com</a><br>
-  </address>
-
+    </address>
+    </nav>
     
     <small>© 2025 rainydays. All rights reserved</small>
     </div>
  </footer>
-
 </body>
 </html>
