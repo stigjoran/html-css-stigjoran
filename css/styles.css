@@ -407,7 +407,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
             }
         .hero__content {
             left:  16px;
-            top: 45%;
+            top: 55%;
             max-width: 20ch;
             gap: .8rem;
         }
