@@ -292,29 +292,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
                     background-color: #2ecc71;
                     transform: translateY(-2px);
                 }
-            }
-
-        @media (min-width: 900px) {
-        
-        
-        .footer__inner {
-            grid-template-columns: auto 1fr;
-            align-items:start;
-            row-gap: 1rem;
-        }
-
-        .footer__brand {
-            grid-column: 1;
-        }
-        
-        .footer__cols {
-            grid-column: 2;
-            grid-template-columns: repeat(4, 1fr);
-            column-gap: 2rem;
-            align-items: start;
-        }
-
-    }    
+            } 
             
             
         
@@ -636,19 +614,6 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
         
         .nb { white-space: nowrap;}
 
-        
-        
-        
-        
-        .site-footer {
-            background: var(--surface-2); 
-            color: var(--text); 
-            font-size: 0.95rem; 
-            padding-block: var(--space-4); 
-            margin-top: 0;
-        }
-        
-
         .footer__inner {
             display: grid;
             grid-template-columns: 1fr;
@@ -685,28 +650,14 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
             margin: 0;
         }
 
+        .footer__address { margin-top: var(--space-1);}
+
         .footer__inner small {
             text-align: center;
             grid-column: 1 / -1;
             margin-top: .5rem;
             color: #444;
             font-size: 0.85rem;
-        }       
-    
-        @media  (min-width: 900px) {
-            .footer__inner{
-                grid-template-columns: auto 1fr;
-                align-items: start;
-                row-gap: 1rem;
-            }
-            .footer__brand { grid-column: 1;}
-            .footer__cols {
-                grid-column: 2;
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                column-gap: 2rem;
-                align-items: start;
-            }
         }
 
         @media (max-width: 480px) {
@@ -1403,4 +1354,96 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
         html, body { height: 100%; }
         body { display: flex; flex-direction: column; }
         .site-main { flex: 1;}
-        .site-footer{ margin-top: auto;}
+
+
+        .site-footer {
+            background: var(--surface-2);
+            color: var(--text);
+            font-size: 0.95rem;
+            padding-block: var(--space-3);
+            margin-top: auto;
+        }
+
+        .footer__inner {
+            display: grid;
+            gap: var(--space-3);
+            max-width: var(--container);
+            margin-inline: auto;
+            padding-inline: var(--space-3)
+        }
+
+        .footer__brand img {
+            max-width: 110px;
+            height: auto;
+        }
+
+        .footer__cols {
+            display: grid;
+            gap: var(--space-2);
+        }
+
+        .footer__cols h3 {
+            font-size: 1rem;
+            margin: 0 0 .25rem 0;
+        }
+
+        .footer__cols a {
+            display: block;
+            color: var(--text);
+            text-decoration: none;
+            margin: .15rem;
+            line-height: 1.3;
+        }
+
+        .footer__cols a:hover {
+            text-decoration: underline;
+        }
+
+        .footer__address {
+            font-style: normal;
+            line-height: 1.4;
+            font-size: 0.9rem;
+            margin-top: var(--space-1);
+        }
+
+        .footer__inner small {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-top: var(--space-3);
+            color: var(--ink-dim);
+            font-size: 0.8rem;
+        }
+
+        @media (min-width: 900px) {
+            .footer__inner {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                align-items: start;
+                column-gap: var(--space-5);
+                row-gap: var(--space-3);
+            }
+
+            .footer__brand {
+                grid-column: 1;
+            }
+
+            .footer__cols {
+                grid-column: 2;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: var(--space-4);
+            }
+
+            .footer__address {
+                grid-column: 3;
+                justify-self: end;
+                align-items: start;
+                margin-top: 0;
+            }
+
+            .footer__inner small {
+                grid-column: 1 / -1;
+                text-align: center;
+                margin-top: var(--space-3);
+            }
+        }
