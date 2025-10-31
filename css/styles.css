@@ -960,6 +960,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
                 border: none;
                 border-radius: var(--radius-md);
                 background-color: var(--input-bg);
+                color: var(--text)
             }
 
             .buybox .btn {
