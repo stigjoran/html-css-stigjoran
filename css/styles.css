@@ -435,10 +435,6 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
                 margin-top: 1.25rem;
                 padding-inline: 1rem;
             }
-            .product {
-                width: 90%;
-                max-width: 320px;
-            }
         }
     
 
@@ -1310,8 +1306,6 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
                 .row-qty { grid-column: 2;}
                 .row-sum { grid-column: 2; justify-self: end;}
             }
-
-            /*cart visningsfeil i mobil modus*/
 
             @media (max-width: 700px) {
             
