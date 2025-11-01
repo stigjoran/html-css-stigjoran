@@ -448,7 +448,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
 
         .grid-products{display: grid; gap: var(--space-3)}
 
-        .muted{color:var(--muted)}
+        .muted{color: var(--surface)}
         .small{font-size: 1rem}
         .price{font-weight: 800; font-size: 1.25rem; margin-bottom: .5rem}       
 
@@ -857,7 +857,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
                 align-items: center;
                 gap: 0.4rem;
                 font-size: 0.95rem;
-                color: #1f2937;
+                color: var(--text);
             }
 
             .buy-perks .check-icon {
@@ -870,7 +870,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
                 justify-content: center;
             }
 
-            .product-details .small { color: var(--muted);}
+            .product-details .small { color: var(--text);}
             .product-details p { margin-top: .5rem;}
 
             .product-buy { display: grid; gap: .75rem; align-content: start;}
