@@ -22,6 +22,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
     --card-darker: #031013;
     --frame-dark-1: #0b1f22;
     --frame-dark-2: #11363b;
+    --card-text: #333;
 
     --input-bg: #f5f7f8;
     --input-bg-2: #e9eef0;
@@ -103,7 +104,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
             border-radius: 999px;
             padding: .75rem 1.25rem;
             background: var(--accent);
-            color: var(--on-bg);
+            color: var(--on-surface);
             font-weight: 600;}
 
         .btn--small{
@@ -356,7 +357,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
             display: block; margin-bottom: 0.25rem;}
 
         .product__meta p{
-            color: var(--muted);
+            color: var(--card-text);
             font-size: 0.9rem}
 
         .center{
@@ -448,7 +449,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
         .grid-products{display: grid; gap: var(--space-3)}
 
         .muted{color:var(--muted)}
-        .small{font-size: .9rem}
+        .small{font-size: 1rem}
         .price{font-weight: 800; font-size: 1.25rem; margin-bottom: .5rem}       
 
         .cart-item {
