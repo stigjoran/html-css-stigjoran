@@ -170,7 +170,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
             cursor: pointer;
         }
 
-        .menu-toogle:focus-visible {
+        .menu-toggle:focus-visible {
             outline: 3px solid var(--focus);
             outline-offset: 4px;
             border-radius: 8px;
@@ -754,7 +754,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
             }
 
             .shop .product .product__meta p {
-                color: var(--muted);
+                color: var(--on-surface);
                 font-size: .9rem;
                 line-height: 1.2;
             }
@@ -1139,7 +1139,7 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
 
             .cart-head {
                 display:grid;
-                grid-template-columns: 1fr 120px 160px 100px;
+                grid-template-columns: 72px 1fr 120px 160px 100px;
                 gap: var(--space-2);
                 padding: var(--space-2) var(--space-2) var(--space-1);
                 color: #cfe6ea;
@@ -1150,14 +1150,20 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
             .cart-row {
                 position: relative;
                 display: grid;
-                grid-template-columns: 1fr 120px 160px 100px;
+                grid-template-columns: 72px 1fr 120px 160px 100px;
                 gap: var(--space-2);
                 align-items: center;
-                background: rgba(255,255,255,.04);
+                background: var(--border-on-dark);
                 border-radius: var(--radius-md);
                 padding: var(--space-2) var(--space-3);
                 margin-top: var(--space-2);
             }
+
+            .row-img { grid-column: 1; margin-left: 0}
+            .row-name {grid-column: 2;;}
+            .row-price { grid-column: 3;}
+            .row-qty { grid-column: 4;}
+            .row-sum { grid-column: 5;}
 
             @media (max-width: 700px) {
                 .cart-row {
@@ -1196,7 +1202,6 @@ ul[role="list"],ol[role="list"]{list-style: none;margin: 0;padding: 0;}
                 border-radius: var(--radius-md);
                 background: #fff;
                 box-shadow: var(--shadow);
-                margin-left: var(--space-3);
             }
 
             .row-name { display: flex; flex-direction: column;}
