@@ -18,11 +18,13 @@
   <div class="container header__inner">
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-    <label for="nav-toggle" class="menu-toggle" aria-label="Open menu">
-    <span></span><span></span><span></span>
+    <label for="nav-toggle" class="menu-toggle" aria-label="Open menu" aria-controls="primary-nav">
+    <span></span>
+    <span></span>
+    <span></span>
     </label>
     
-    <nav class="nav" aria-label="Primary">
+    <nav id="primary-nav" class="nav" aria-label="Primary">
       <a class="nav__link" href="index.html">Home</a>
       <a class="nav__link" href="shop.html">Shop</a>
     </nav>
@@ -38,7 +40,7 @@
  </header>
     <!-- hær kommer side innholdet-->
 <main id="main" class="site-main">
-  <section class="container">
+  <div class="container">
 
     <div class="cart-frame">
 
@@ -103,7 +105,7 @@
             </div>
             <div class="row-sum">$100</div>
           </div>
-        </section>
+        </div>
 
         <aside class="cart-summary" aria-labelledby="summary-title">
           <h2 id="summary-title" class="visually-hidden">Order summary</h2>
