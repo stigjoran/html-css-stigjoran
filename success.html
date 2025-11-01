@@ -13,15 +13,17 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 <!-- header hær-->
-<header class="site-header">
+  <header class="site-header">
   <div class="container header__inner">
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-    <label for="nav-toggle" class="menu-toggle" aria-label="Open menu">
-    <span></span><span></span><span></span>
+    <label for="nav-toggle" class="menu-toggle" aria-label="Open menu" aria-controls="primary-nav">
+    <span></span>
+    <span></span>
+    <span></span>
     </label>
     
-    <nav class="nav" aria-label="Primary">
+    <nav id="primary-nav" class="nav" aria-label="Primary">
       <a class="nav__link" href="index.html">Home</a>
       <a class="nav__link" href="shop.html">Shop</a>
     </nav>
